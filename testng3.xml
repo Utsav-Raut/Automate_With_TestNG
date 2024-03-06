@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestingAnnotations" verbose="1" >
+
+  <test name="Class Annotations" >
+    <classes>
+       <class name="config_annotations.TestCaseClass1">       
+       </class>
+       <class name="config_annotations.TestCaseClass2" />
+       <class name="config_annotations.TestCaseClass3" />
+    </classes>
+  </test>
+  
+  <test name="Regression" >
+  	<classes>
+       <class name="config_annotations.TestCaseClass3" />
+    </classes>
+  </test>
+ 
+  
+</suite>
