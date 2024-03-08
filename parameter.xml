@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestingParametersWithoutDP" verbose="1" >
+  <test name="Test Parameterisation" >
+  <parameter name="username" value="standard_user"></parameter>
+  <parameter name="password" value="secret_sauce"></parameter>
+    <classes>
+       <class name="data_providers.Parameterise_Without_Data_Provider" />
+    </classes>
+  </test>
+ 
+  
+</suite>
