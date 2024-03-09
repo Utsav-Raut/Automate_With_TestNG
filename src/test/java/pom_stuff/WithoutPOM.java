@@ -37,6 +37,10 @@ public class WithoutPOM {
 		Thread.sleep(5000);
 		driver.findElement(By.id("login-button")).click();
 		Thread.sleep(3000);
+		driver.findElement(By.className("bm-burger-button")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.linkText("Logout")).click();
+		Thread.sleep(3000);
 	}
 	
 	@AfterMethod
