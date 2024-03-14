@@ -13,11 +13,10 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
+  	<properties>
+	  <java.version>11</java.version>
+	  <maven.compiler.release>${java.version}</maven.compiler.release>
+	</properties>
 
   <dependencies>
     <dependency>
@@ -40,6 +39,29 @@
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-java</artifactId>
 	    <version>4.16.1</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-java</artifactId>
+	    <version>7.9.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-testng</artifactId>
+	    <version>7.9.0</version>
+	</dependency>
+
+	
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.8.0</version>
+	    <scope>test</scope>
 	</dependency>
 
 
